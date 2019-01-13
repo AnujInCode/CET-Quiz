@@ -2,20 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="in.edu.mmit.quiz">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:appComponentFactory="Androidx"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:hardwareAccelerated="false"
-        android:largeHeap="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:appComponentFactory,android:hardwareAccelerated"
-        >
+        tools:replace="android:appComponentFactory,android:hardwareAccelerated">
         <activity
             android:name=".MainActivity"
             android:label="Quiz"
@@ -47,7 +47,10 @@
         <activity
             android:name=".Bookmarks"
             android:screenOrientation="portrait" />
-        <activity android:name=".Finish"             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Finish"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TestSeries"></activity>
     </application>
 
 </manifest>

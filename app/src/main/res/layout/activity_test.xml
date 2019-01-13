@@ -52,7 +52,7 @@
         <TextView
 
             android:id="@+id/timer"
-            android:layout_width="99dp"
+            android:layout_width="82dp"
             android:layout_height="44dp"
             android:layout_alignParentRight="true"
             android:textSize="@dimen/_20sdp"
@@ -76,11 +76,11 @@
 
 
             <HorizontalScrollView
-                android:layout_width="@dimen/_300sdp"
+                android:layout_width="wrap_content"
                     android:layout_height="@dimen/_120sdp">
 
                 <androidx.core.widget.NestedScrollView
-                    android:layout_width="@dimen/_300sdp"
+                    android:layout_width="@dimen/_400sdp"
                     android:layout_height="@dimen/_120sdp">a
 
                 <io.github.kexanie.library.MathView
@@ -230,7 +230,9 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 />
-
+            <HorizontalScrollView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_120sdp">
             <androidx.core.widget.NestedScrollView
 
                 android:layout_width="wrap_content"
@@ -238,11 +240,11 @@
 
                 <io.github.kexanie.library.MathView
                     android:id="@+id/Hint"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="@dimen/_400sdp"                    android:layout_height="match_parent"
                     android:visibility="visible"
                     auto:engine="MathJax">            </io.github.kexanie.library.MathView>
             </androidx.core.widget.NestedScrollView>
+           </HorizontalScrollView>
         </LinearLayout>
                 <LinearLayout
                     android:id="@+id/buttons"
