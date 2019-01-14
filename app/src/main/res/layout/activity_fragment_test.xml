@@ -1,107 +1,106 @@
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
     xmlns:timer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".test"
-    xmlns:auto="http://schemas.android.com/apk/res-auto">
+    tools:context=".test">
 
-    <RelativeLayout
-        android:id="@+id/content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context=".Questions"
+
+    <TextView
+        android:id="@+id/Qid"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:textSize="@dimen/_25sdp"
+
+        android:textStyle="bold"
+        auto:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/bookmark"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bookmarked"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        auto:layout_constraintEnd_toStartOf="@+id/timer"
+        auto:layout_constraintStart_toEndOf="@+id/Qid"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="24dp"
+        android:layout_height="40dp"
+        android:background="@drawable/close"
+        android:visibility="gone"
+
+        />
+
+    <TextView
+
+        android:id="@+id/timer"
+        android:layout_width="80dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/_20sdp"
         android:visibility="visible"
+        auto:layout_constraintEnd_toEndOf="@+id/surfaceView"
+        tools:layout_editor_absoluteY="16dp" />
 
-        >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="392dp"
+        android:layout_height="453dp"
+        android:layout_marginBottom="8dp"
+        auto:layout_constraintBottom_toTopOf="@+id/finish"
+        auto:layout_constraintTop_toBottomOf="@+id/surfaceView"
+        tools:layout_editor_absoluteX="0dp" />
 
-        <TextView
-            android:id="@+id/Qid"
-            android:textStyle="bold"
-            android:layout_width="@dimen/_70sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:textSize="@dimen/_25sdp"
-            android:layout_alignParentLeft="true"
 
-            />
+    <Button
+        android:id="@+id/Previous"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="PREV"
+        auto:layout_constraintEnd_toEndOf="parent"
+        auto:layout_constraintStart_toEndOf="@+id/finish"
+        tools:layout_editor_absoluteY="523dp" />
 
-        <Button
-            android:layout_centerHorizontal="true"
-            android:id="@+id/bookmark"
-            android:textStyle="bold"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
-            android:textSize="@dimen/_25sdp"
-            android:background="@drawable/bookmarked"
-            />
-        <Button
-            android:background="@drawable/close"
-            android:id="@+id/close"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
-            android:visibility="gone"
-            android:layout_alignParentRight="true"
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="NEXT"
+        auto:layout_constraintEnd_toStartOf="@+id/finish"
+        auto:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="523dp" />
 
-            />
 
-        <TextView
-
-            android:id="@+id/timer"
-            android:layout_width="63dp"
-            android:layout_height="36dp"
-            android:layout_alignParentRight="true"
-            android:textSize="@dimen/_20sdp"
-            android:visibility="visible" />
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/pager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
+    <Button
+        android:id="@+id/finish"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:visibility="visible"
+        auto:layout_constraintEnd_toStartOf="@+id/Previous"
+        auto:layout_constraintHorizontal_bias="0.5"
+        auto:layout_constraintStart_toEndOf="@+id/Next"
+        tools:layout_editor_absoluteY="523dp" />
 
-        <LinearLayout
-            android:id="@+id/buttons"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            android:layout_above="@id/finish"
-            >
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="387dp"
+        android:layout_height="68dp"
+        auto:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
-            <Button
-                android:id="@+id/Previous"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/buttons"
-                android:layout_weight="1"
-                android:text="PREV" />
-
-            <Button
-                android:id="@+id/Next"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="NEXT" />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/finish"
-            android:layout_width="fill_parent"
-            android:layout_height="@dimen/_50sdp"
-            android:layout_alignParentBottom="true"
-            android:text="Finish"
-            android:visibility="visible" />
-    </RelativeLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
