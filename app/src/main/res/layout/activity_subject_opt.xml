@@ -5,13 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SubjectOpt">
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
-        android:scrollbars="vertical"
         android:scrollbarAlwaysDrawVerticalTrack="true"
-        >
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="86dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/nav_header_name"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="#4C21AE"
+                android:drawableLeft="@drawable/unit"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="    MMIT-MHCET"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="#FFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ll1"
@@ -21,13 +46,15 @@
             android:orientation="horizontal"
 
             >
+
             <Button
                 android:id="@+id/physics"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="91dp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_40sdp"
                 android:layout_weight="1"
-                android:background="#f0eb79"
+                android:background="@drawable/physics_chapter"
                 android:text="Physics"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"
@@ -44,11 +71,12 @@
 
             <Button
                 android:id="@+id/chemistry"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_height="91dp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_40sdp"
                 android:layout_weight="1"
-                android:background="#f5f5dc"
-                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/chemistry_chapter"
                 android:text="Chemistry"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"
@@ -61,13 +89,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/maths"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:foreground="?attr/selectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="91dp"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_40sdp"
                 android:layout_weight="1"
-                android:background="#a084d1"
+                android:background="@drawable/round_corners"
                 android:text="Maths"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"

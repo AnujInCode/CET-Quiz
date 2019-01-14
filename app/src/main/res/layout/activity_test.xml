@@ -52,7 +52,7 @@
         <TextView
 
             android:id="@+id/timer"
-            android:layout_width="99dp"
+            android:layout_width="82dp"
             android:layout_height="44dp"
             android:layout_alignParentRight="true"
             android:textSize="@dimen/_20sdp"
@@ -76,11 +76,11 @@
 
 
             <HorizontalScrollView
-                android:layout_width="@dimen/_300sdp"
+                android:layout_width="wrap_content"
                     android:layout_height="@dimen/_120sdp">
 
                 <androidx.core.widget.NestedScrollView
-                    android:layout_width="@dimen/_300sdp"
+                    android:layout_width="@dimen/_400sdp"
                     android:layout_height="@dimen/_120sdp">a
 
                 <io.github.kexanie.library.MathView
@@ -231,18 +231,23 @@
                 android:gravity="center"
                 />
 
-            <androidx.core.widget.NestedScrollView
+            <HorizontalScrollView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_120sdp">
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                <androidx.core.widget.NestedScrollView
 
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/Hint"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:visibility="visible"
-                    auto:engine="MathJax">            </io.github.kexanie.library.MathView>
-            </androidx.core.widget.NestedScrollView>
+                    android:layout_height="wrap_content">
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/Hint"
+                        android:layout_width="@dimen/_400sdp"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        auto:engine="MathJax"></io.github.kexanie.library.MathView>
+                </androidx.core.widget.NestedScrollView>
+            </HorizontalScrollView>
         </LinearLayout>
                 <LinearLayout
                     android:id="@+id/buttons"
@@ -258,7 +263,10 @@
                         android:id="@+id/Previous"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
                         android:layout_weight="1"
+                        android:background="@drawable/previous_button"
                         android:text="PREV"
                         />
 
@@ -266,6 +274,9 @@
                         android:id="@+id/Next"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:background="@drawable/next_button"
                         android:layout_weight="1"
                         android:text="NEXT" />
 
@@ -273,24 +284,28 @@
             </LinearLayout>
 
     </RelativeLayout>
+
     <Button
         android:id="@+id/play_button"
         android:layout_width="@dimen/_200sdp"
-        android:layout_height="@dimen/_200sdp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Start"
-        android:textSize="@dimen/_40sdp"
-        android:foreground="?attr/selectableItemBackground"
-        android:textColor="#fff"
         android:layout_margin="@dimen/fab_margin"
-        />
+        android:background="@drawable/submit_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="Start"
+        android:textColor="#fff"
+        android:textSize="@dimen/_40sdp" />
 
 
     <Button
         android:id="@+id/finish"
         android:layout_width="fill_parent"
-        android:layout_height="@dimen/_50sdp"
+        android:layout_height="@dimen/_40sdp"
         android:layout_gravity="bottom"
+        android:background="@drawable/submit_button"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
         android:text="Finish"
         android:visibility="invisible"
         />

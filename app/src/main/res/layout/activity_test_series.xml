@@ -1,0 +1,285 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:timer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestSeries">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:visibility="visible"
+        tools:context=".Questions"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:id="@+id/q_header"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="#4C21AE">
+
+            <TextView
+                android:id="@+id/Qid"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bookmark"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="43dp"
+                android:layout_toStartOf="@+id/timer"
+                android:layout_toEndOf="@+id/Qid"
+                android:background="@drawable/bookmark_add"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/close"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+
+                android:id="@+id/timer"
+                android:layout_width="89dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:textSize="@dimen/_20sdp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/q_header"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:orientation="horizontal"
+
+                >
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_120sdp">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="@dimen/_400sdp"
+                        android:layout_height="@dimen/_120sdp">a
+
+                        <io.github.kexanie.library.MathView
+                            android:id="@+id/KaTeX_Ques"
+                            android:layout_width="@dimen/_400sdp"
+                            android:layout_height="wrap_content"
+                            auto:engine="MathJax"></io.github.kexanie.library.MathView>
+                    </androidx.core.widget.NestedScrollView>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="(A)"
+                    android:textSize="@dimen/_15sdp"
+
+                    android:textStyle="bold" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/KaTeX_OptA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        auto:engine="MathJax"></io.github.kexanie.library.MathView>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:text="(B)"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <androidx.core.widget.NestedScrollView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/KaTeX_OptB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        auto:engine="MathJax"></io.github.kexanie.library.MathView>
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:text="(C)"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <androidx.core.widget.NestedScrollView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/KaTeX_OptC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        auto:engine="MathJax"></io.github.kexanie.library.MathView>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:text="(D)"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <androidx.core.widget.NestedScrollView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/KaTeX_OptD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        auto:engine="MathJax"></io.github.kexanie.library.MathView>
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_120sdp">
+
+                    <androidx.core.widget.NestedScrollView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <io.github.kexanie.library.MathView
+                            android:id="@+id/Hint"
+                            android:layout_width="@dimen/_400sdp"
+                            android:layout_height="match_parent"
+                            android:visibility="visible"
+                            auto:engine="MathJax"></io.github.kexanie.library.MathView>
+                    </androidx.core.widget.NestedScrollView>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/submit_button"
+        android:text="Finish"
+        android:visibility="visible"
+        auto:layout_constraintBottom_toBottomOf="parent"
+        auto:layout_constraintEnd_toEndOf="parent"
+        auto:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
