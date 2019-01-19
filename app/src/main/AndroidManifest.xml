@@ -9,17 +9,19 @@
         android:allowBackup="true"
         android:appComponentFactory="Androidx"
         android:hardwareAccelerated="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory,android:hardwareAccelerated">
+        <activity android:name=".Test_Papers"></activity>
         <activity
             android:name=".MainActivity"
             android:label="Quiz"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,7 +52,12 @@
         <activity
             android:name=".Finish"
             android:screenOrientation="portrait" />
-        <activity android:name=".TestSeries"></activity>
+        <activity
+            android:name=".TestSeries"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Bookmark_layout"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

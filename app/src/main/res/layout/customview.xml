@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/_5sdp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:background="@drawable/baner"
+        android:adjustViewBounds="true"
+
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp" />
+    <TextView
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:text="Marathwada Mitra Mandal's Institute of Technology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView        android:textSize="15sp"
+
+        android:textAlignment="center"
+        android:text="Address: Survey No. 35, Plot No. 5/6, Vadgaon Shinde Road, Lohgaon, Pune, Maharashtra 411047"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView        android:textSize="15sp"
+
+        android:autoLink="web"
+        android:textAlignment="center"
+        android:text="https://www.mmit.edu.in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView        android:textSize="15sp"
+
+        android:textAlignment="center"
+        android:text="
+        The Marathwada Mitramandal’s Institute of Technology, Lohgaon is established in the year 2008. It is affiliated to the Savitribai Phule  Pune University and is approved and accredited by AICTE. This multidisciplinary Institute offers University approved UG Programmes in engineering.
+"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView        android:textSize="15sp"
+
+        android:textAlignment="center"
+        android:text="Developed By :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView        android:textSize="15sp"
+
+        android:textAlignment="center"
+        android:autoLink="email"
+        android:text="Anuj Jain (anujchampjain@gmail.com)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView        android:textSize="15sp"
+
+        android:textAlignment="center"
+        android:autoLink="email"
+        android:text="Paresh Kadam (subtleparesh@gmail.com)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView        android:textSize="15sp"
+
+
+        android:textAlignment="center"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView        android:textSize="15sp"
+        android:autoLink="email"
+
+        android:textAlignment="center"
+        android:text="Feedback : (feedback@mmit.edu.in)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+

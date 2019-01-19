@@ -2,7 +2,6 @@
     xmlns:auto="http://schemas.android.com/apk/res-auto"
     xmlns:timer="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/coordinatorLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TestSeries">
@@ -21,8 +20,7 @@
         <RelativeLayout
             android:id="@+id/q_header"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:background="#4C21AE">
+            android:layout_height="@dimen/_50sdp">
 
             <TextView
                 android:id="@+id/Qid"
@@ -37,16 +35,13 @@
 
             <Button
                 android:id="@+id/bookmark"
-                android:layout_width="@dimen/_20sdp"
+                android:layout_width="@dimen/_40sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="45dp"
-                android:layout_marginEnd="43dp"
-                android:layout_toStartOf="@+id/timer"
-                android:layout_toEndOf="@+id/Qid"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="50dp"
+                android:layout_centerHorizontal="true"
                 android:background="@drawable/bookmark_add"
-                android:textSize="@dimen/_25sdp"
-                android:textStyle="bold" />
+            />
 
             <Button
                 android:id="@+id/close"

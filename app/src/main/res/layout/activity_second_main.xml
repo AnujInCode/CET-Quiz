@@ -72,7 +72,6 @@
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawablePadding="15dp"
@@ -85,7 +84,6 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/forget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/relative2"
@@ -97,7 +95,6 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/Continue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -111,12 +108,12 @@
         android:textSize="20sp" />
 
     <Button
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Signup"
         android:textAllCaps="false"
         android:textColor="#fff"
-        android:onClick="SignupActivity"
         android:background="?attr/actionBarItemBackground"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"/>

@@ -22,11 +22,11 @@
 
         <TextView
             android:id="@+id/Qid"
-            android:textStyle="bold"
-            android:layout_width="@dimen/_70sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:textSize="@dimen/_25sdp"
+            android:layout_width="142dp"
+            android:layout_height="58dp"
             android:layout_alignParentLeft="true"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
 
             />
 
@@ -42,8 +42,8 @@
         <Button
             android:background="@drawable/close"
             android:id="@+id/close"
-            android:layout_width="@dimen/_40sdp"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
             android:visibility="gone"
             android:layout_alignParentRight="true"
 
@@ -52,8 +52,8 @@
         <TextView
 
             android:id="@+id/timer"
-            android:layout_width="82dp"
-            android:layout_height="44dp"
+            android:layout_width="136dp"
+            android:layout_height="52dp"
             android:layout_alignParentRight="true"
             android:textSize="@dimen/_20sdp"
             android:visibility="visible" />
@@ -80,12 +80,12 @@
                     android:layout_height="@dimen/_120sdp">
 
                     <androidx.core.widget.NestedScrollView
-                        android:layout_width="@dimen/_400sdp"
+                        android:layout_width="@dimen/_500sdp"
                         android:layout_height="@dimen/_120sdp">a
 
                         <io.github.kexanie.library.MathView
                             android:id="@+id/KaTeX_Ques"
-                            android:layout_width="@dimen/_400sdp"
+                            android:layout_width="@dimen/_500sdp"
                             android:layout_height="wrap_content"
                             auto:engine="MathJax">
                         </io.github.kexanie.library.MathView>
@@ -214,49 +214,13 @@
         </LinearLayout>
 
 
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_120sdp"
-                android:orientation="horizontal"
-                android:layout_above="@id/buttons"
-                >
-                <TextView
-                    android:textStyle="bold"
-                    android:textSize="@dimen/_20sdp"
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    />
-
-                <HorizontalScrollView
-                    android:layout_width="@dimen/_300sdp"
-                    android:layout_height="@dimen/_120sdp">
-
-                    <androidx.core.widget.NestedScrollView
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <io.github.kexanie.library.MathView
-                            android:id="@+id/Hint"
-                            android:layout_width="@dimen/_400sdp"
-                            android:layout_height="match_parent"
-                            android:visibility="visible"
-                            auto:engine="MathJax"></io.github.kexanie.library.MathView>
-                    </androidx.core.widget.NestedScrollView>
-                </HorizontalScrollView>
-            </LinearLayout>
             <LinearLayout
                 android:id="@+id/buttons"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
                 android:orientation="horizontal"
                 android:weightSum="2"
-                android:gravity="bottom|center"
+                android:layout_above="@id/Hint"
                 >
 
                 <Button
@@ -281,6 +245,51 @@
                     android:text="NEXT" />
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20sdp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/Texthint"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/_20sdp"
+
+                    android:text="Hint : "
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="@dimen/_340sdp"
+                    android:layout_height="@dimen/_120sdp">
+
+                    <androidx.core.widget.NestedScrollView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <io.github.kexanie.library.MathView
+                            android:id="@+id/Hint"
+                            android:layout_width="@dimen/_500sdp"
+                            android:layout_height="match_parent"
+                            android:visibility="visible"
+                            auto:engine="MathJax"></io.github.kexanie.library.MathView>
+                    </androidx.core.widget.NestedScrollView>
+                </HorizontalScrollView>
+            </LinearLayout>
+
         </LinearLayout>
 
     </RelativeLayout>

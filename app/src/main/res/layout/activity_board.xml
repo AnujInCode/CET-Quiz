@@ -24,11 +24,10 @@
                 android:layout_margin="0dp"
                 android:layout_weight="1"
                 android:background="#4C21AE"
-                android:drawableLeft="@drawable/unit"
                 android:foreground="?attr/selectableItemBackground"
                 android:paddingLeft="25dp"
                 android:paddingRight="25dp"
-                android:text="    MMIT-MHCET"
+                android:text="    MMIT-CET"
                 android:textAlignment="textStart"
                 android:textAllCaps="true"
                 android:textColor="#FFFF"
@@ -42,7 +41,7 @@
             <Button
                 android:id="@+id/unit"
                 android:layout_width="0dp"
-                android:layout_height="99dp"
+                android:layout_height="@dimen/_99sdp"
                 android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginVertical="@dimen/_6sdp"
                 android:layout_weight="1"
@@ -67,7 +66,7 @@
             <Button
                 android:id="@+id/series"
                 android:layout_width="0dp"
-                android:layout_height="99dp"
+                android:layout_height="@dimen/_99sdp"
                 android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginVertical="@dimen/_6sdp"
                 android:layout_weight="1"
@@ -91,7 +90,7 @@
             <Button
                 android:id="@+id/papers"
                 android:layout_width="0dp"
-                android:layout_height="99dp"
+                android:layout_height="@dimen/_99sdp"
                 android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginVertical="@dimen/_6sdp"
                 android:layout_weight="1"
@@ -115,7 +114,7 @@
             <Button
                 android:id="@+id/bookmark"
                 android:layout_width="0dp"
-                android:layout_height="99dp"
+                android:layout_height="@dimen/_99sdp"
                 android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginVertical="@dimen/_6sdp"
                 android:layout_weight="1"
@@ -128,29 +127,7 @@
                 android:textColor="#fff"
                 android:textSize="18sp" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/graph"
-                android:layout_width="0dp"
-                android:layout_height="99dp"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                android:layout_marginVertical="@dimen/_6sdp"
-                android:foreground="?attr/selectableItemBackground"
-                android:layout_weight="1"
-                android:background="#f5f5dc"
-                android:drawableRight="@drawable/chart"
-                android:paddingRight="@dimen/_20sdp"
-                android:text="Performance Graph"
-                android:textAllCaps="false"
-                android:textColor="#2f2e2e"
-                android:textSize="18sp" />
-
-
-        </LinearLayout>
 
 
 
