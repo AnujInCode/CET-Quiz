@@ -28,7 +28,7 @@
 
         android:textAlignment="center"
         android:text="
-        The Marathwada Mitramandal’s Institute of Technology, Lohgaon is established in the year 2008. It is affiliated to the Savitribai Phule  Pune University and is approved and accredited by NACC . This multidisciplinary Institute offers University approved UG Programmes in engineering.
+        The Marathwada Mitramandal’s Institute of Technology, Lohgaon is established in the year 2008. This multidisciplinary Institute offers University approved UG Programmes in engineering.
 "
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
