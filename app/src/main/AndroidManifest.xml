@@ -9,8 +9,9 @@
         android:allowBackup="true"
         android:appComponentFactory="Androidx"
         android:hardwareAccelerated="false"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_launcher_round"
         android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
         android:largeHeap="true"
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
@@ -19,7 +20,7 @@
         <activity android:name=".Test_Papers"></activity>
         <activity
             android:name=".MainActivity"
-            android:label="Quiz"
+            android:label="MMIT Mock CET"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>

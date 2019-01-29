@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">MMIT Mock CET</string>
     <string name="button_feedback">Send feedback</string>
     <string-array name="Year">
         <item>2014</item>
