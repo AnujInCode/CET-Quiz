@@ -90,6 +90,7 @@
 
 
                 <HorizontalScrollView
+                    android:id="@+id/h1"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_120sdp">
 
@@ -242,6 +243,7 @@
                     android:textStyle="bold" />
 
                 <HorizontalScrollView
+                    android:id="@+id/h6"
                     android:layout_width="@dimen/_300sdp"
                     android:layout_height="@dimen/_120sdp">
 
@@ -263,18 +265,42 @@
         </LinearLayout>
 
     </RelativeLayout>
-
-    <Button
-        android:id="@+id/finish"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/submit_button"
-        android:text="Finish"
+
         android:visibility="visible"
         auto:layout_constraintBottom_toBottomOf="parent"
         auto:layout_constraintEnd_toEndOf="parent"
-        auto:layout_constraintStart_toStartOf="parent" />
+        auto:layout_constraintHorizontal_bias="0.82"
+        auto:layout_constraintStart_toStartOf="parent"
+        >
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/previous_button"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:background="@drawable/next_button"
+            android:layout_weight="1"
+            android:text="Finish" />
+
+    </LinearLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

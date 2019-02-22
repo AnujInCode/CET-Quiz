@@ -76,6 +76,7 @@
 
 
                 <HorizontalScrollView
+                    android:id="@+id/h1"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_120sdp">
 
@@ -114,6 +115,7 @@
 
                     android:text="(A)"
                     />
+
 
                 <androidx.core.widget.NestedScrollView
                     android:layout_width="wrap_content"
@@ -155,7 +157,6 @@
                         android:layout_height="match_parent"
                         android:visibility="visible"
                         auto:engine="MathJax">            </io.github.kexanie.library.MathView></androidx.core.widget.NestedScrollView>
-
             </LinearLayout>        <LinearLayout
             android:id="@+id/ll3"
             android:layout_width="match_parent"
@@ -171,6 +172,7 @@
                 android:gravity="center"
                 android:text="(C)"
                 />
+
             <androidx.core.widget.NestedScrollView
 
                 android:layout_width="wrap_content"
@@ -198,6 +200,7 @@
                 android:gravity="center"
                 android:text="(D)"
                 />
+
             <androidx.core.widget.NestedScrollView
 
                 android:layout_width="wrap_content"
@@ -272,6 +275,7 @@
                     />
 
                 <HorizontalScrollView
+                    android:id="@+id/h6"
                     android:layout_width="@dimen/_340sdp"
                     android:layout_height="@dimen/_120sdp">
 

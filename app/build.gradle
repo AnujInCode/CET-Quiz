@@ -8,8 +8,8 @@ android {
         applicationId "in.edu.mmit.quiz"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 6
+        versionName "2.1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -32,6 +32,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.1'
 
     implementation 'com.amitshekhar.android:jackson-android-networking:1.0.2'
 
