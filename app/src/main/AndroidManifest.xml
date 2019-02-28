@@ -27,7 +27,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:appComponentFactory,android:hardwareAccelerated">
-        <activity android:name=".Test_Papers" />
+        <activity android:name=".Test_Papers"           android:screenOrientation="portrait" />
         <activity
             android:name=".Splash"
             android:label="MMIT Mock CET"
@@ -51,28 +51,49 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".navigation_menu"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+
+            />
         <activity
             android:name=".Board"
+            android:hardwareAccelerated="true"
+
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".SubjectOpt"
+            android:hardwareAccelerated="true"
+
             android:screenOrientation="portrait" />
         <activity
             android:name=".test"
-            android:screenOrientation="portrait" />
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize"
+
+            />
         <activity
             android:name=".Bookmarks"
+            android:hardwareAccelerated="true"
+
             android:screenOrientation="portrait" />
         <activity
             android:name=".Finish"
-            android:screenOrientation="portrait" />
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize"
+
+            />
         <activity
             android:name=".TestSeries"
-            android:screenOrientation="portrait" />
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize"
+
+            />
         <activity
             android:name=".Bookmark_layout"
-            android:screenOrientation="portrait" />
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize"
+            />
         <activity
             android:name=".video"
             android:hardwareAccelerated="true"

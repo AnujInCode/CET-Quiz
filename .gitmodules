@@ -1,0 +1,2 @@
+[submodule "app/src/main/java/in/edu/mmit/quiz"]
+	url = https://gitlab.com/anujchampjain/cet-quiz.git

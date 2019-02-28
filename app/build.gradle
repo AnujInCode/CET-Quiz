@@ -8,8 +8,8 @@ android {
         applicationId "in.edu.mmit.quiz"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 6
-        versionName "2.1.2"
+        versionCode 15
+        versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

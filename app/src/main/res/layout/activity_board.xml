@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Board"
+
+
+
     tools:showIn="@layout/activity_menu">
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <RelativeLayout
             android:padding="@dimen/_5sdp"
-            android:background="#4C21AE"
+            android:background="@drawable/gradient"
             android:layout_width="match_parent"
             android:layout_height="72dp"
             android:orientation="horizontal">
@@ -25,9 +30,10 @@
                 android:textSize="24sp"
                 android:layout_toRightOf="@+id/nav_header_name"
                 android:text="  MMIT-CET"
+
                 android:textStyle="bold"
                 android:layout_marginLeft="@dimen/_25sdp"
-                android:textColor="#FFFF"
+                android:textColor="#000"
                 android:textAlignment="textStart"
                 android:textAllCaps="true"
                 android:layout_centerVertical="true"
@@ -48,23 +54,23 @@
 
 
         </RelativeLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
+                android:layout_marginHorizontal="@dimen/_10sdp"
+
                 android:id="@+id/unit"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_99sdp"
-                android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginVertical="@dimen/_6sdp"
                 android:layout_weight="1"
-                android:background="#f0eb79"
-                android:drawableRight="@drawable/unit"
-                android:foreground="?attr/selectableItemBackground"
+                android:drawableLeft="@drawable/unit"
                 android:paddingRight="@dimen/_20sdp"
-                android:text="Unit Test"
+                android:background="@drawable/md_transparent"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"
                 android:textSize="18sp" />
@@ -79,17 +85,15 @@
 
 
             <Button
+                android:layout_marginHorizontal="@dimen/_10sdp"
+
                 android:id="@+id/series"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_99sdp"
-                android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginVertical="@dimen/_6sdp"
                 android:layout_weight="1"
-                android:background="#524d47"
-                android:foreground="?attr/selectableItemBackground"
-                android:drawableRight="@drawable/test"
-                android:paddingRight="@dimen/_20sdp"
-                android:text="Test Series"
+                android:drawableRight="@drawable/series"
+                android:background="@drawable/md_transparent"
                 android:textAllCaps="false"
                 android:textColor="#ffffff"
                 android:textSize="18sp" />
@@ -103,17 +107,16 @@
             android:orientation="horizontal">
 
             <Button
+                android:layout_marginHorizontal="@dimen/_10sdp"
+
                 android:id="@+id/papers"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_99sdp"
-                android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginVertical="@dimen/_6sdp"
                 android:layout_weight="1"
-                android:background="#a084d1"
-                android:drawableRight="@drawable/copy"
-                android:paddingRight="@dimen/_20sdp"
+                android:drawableLeft="@drawable/ques"
                 android:foreground="?attr/selectableItemBackground"
-                android:text="Question Papers"
+                android:background="@drawable/md_transparent"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />
@@ -127,18 +130,16 @@
             android:orientation="horizontal">
 
             <Button
+                android:layout_marginHorizontal="@dimen/_10sdp"
+
                 android:id="@+id/bookmark"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_99sdp"
-                android:layout_marginHorizontal="@dimen/_20sdp"
                 android:layout_marginVertical="@dimen/_6sdp"
                 android:layout_weight="1"
-                android:background="#80e7a9"
-                android:drawableRight="@drawable/bookmark"
+                android:drawableRight="@drawable/bmark"
                 android:foreground="?attr/selectableItemBackground"
-                android:paddingRight="@dimen/_20sdp"
-                android:text="BookMarks"
-                android:textAllCaps="false"
+                android:background="@drawable/md_transparent"                android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -152,19 +153,16 @@
                 android:id="@+id/video"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_99sdp"
-                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
                 android:layout_marginVertical="@dimen/_6sdp"
                 android:layout_weight="1"
-                android:background="@color/md_material_blue_800"
-                android:drawableRight="@drawable/yvideo"
+                android:drawableLeft="@drawable/video"
                 android:foreground="?attr/selectableItemBackground"
-                android:paddingRight="@dimen/_20sdp"
-                android:text="Video"
+                android:background="@drawable/md_transparent"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />
         </LinearLayout>
-
 
     </LinearLayout>
 </ScrollView>
